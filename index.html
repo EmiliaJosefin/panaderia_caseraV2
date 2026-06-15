@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="español">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Casera</title>
+    <link rel="icon" href="assets/imagenes/logo.svg">
+    <meta name="author" content="Emilia Orozco">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+</head>
+
+<body>
+    <!-- Menú de navegación de la página -->
+    <header>
+        <div class="encabezado">
+            <img src="assets/imagenes/logo.svg" alt="imagen de un vaso de cafe con una dona" class="icono-encabezado">
+            <h1>Panadería Casera</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="misionVision.html" target="_blank">Misión y Visión</a></li>
+                <li><a href="pedidos.html" target="_blank">Hacer Pedido</a></li>
+                <li><a href="informacion.html" target="_blank">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cuerpo de la página, se insertan videos y audio -->
+    <main>
+        <div class="imagen-main">
+            <h2>¡El sabor a toda hora! </h2>
+            <h3>-Panadería y repostería-</h3>
+        </div>
+
+        <!-- Mensaje de bienvenida -->
+        <section id="bienvenido">
+            <h2>¡Bienvenido!</h2>
+            <p>Ofrecemos panes artesanales hechos con mucho amor, cada uno de ellos
+                con ingredientes frescos y seleccionados de la mejor manera para ofrecer la más alta
+                calidad, entre los productos que puedes encontrar destacan los bocadillos, queques y panes.</p>
+
+            <q><em>El pan es la más importante de todas las invenciones
+                    sociales, anterior a la agricultura misma. </q></em>
+            <blockquote> -Guy de Maupassant-</blockquote>
+        </section>
+
+        <!-- Lista descriptiva de productos -->
+        <section id="nuestros-productos">
+            <h1>Nuestros Productos</h1>
+            <dl>
+                <dt>Panes salados</dt>
+                <dd>Su olor característico, su textura crujiente y su sabor inconfundible son características propias de
+                    nuestro pancito salado. Nuestra variedad de panes salados va desde el famoso y legendario bollito
+                    español hasta las bollas aliñadas que se pueden llevar directamente a la mesa sin acompañamiento.
+                    Nuestra receta perfeccionada con el tiempo hace que nuestro pan baguette se conserve fresco y
+                    agradable por mucho más tiempo. El tamaño y forma de nuestras bollitas son ideales para prepararse
+                    un delicioso emparedado. Las puede encontarr aliñadas con queso o natilla.</dd>
+                <br>
+                <dt>Panes dulces</dt>
+                <dd>El pan dulce de la panadería casera tiene sabor casero del pan de nuestras abuelas. Fermentado
+                    cálidamente, hace qeu su miga quede esponjosa y mantenga el sabor de cada uno de los ingredientes
+                </dd>
+                <br>
+                <dt>Panes integrales</dt>
+                <dd>¡Por qué comer saludable también es rico!
+                    <br> Nuestros panes integrales son altos en fibra, elaborados con harina integral de la más alta
+                    calidad e ingredientes que aportan a la salud.
+                </dd>
+            </dl>
+        </section>
+        <!-- Se agregan imágenes -->
+        <section class="imagenes-polaroid">
+            <img src="assets/imagenes/postreQueque.jpg" alt="ingredientes de nuestros panes" class="polaroid1">
+            <img src="assets/imagenes/macarones.jpg" alt="pan" class="polaroid2">
+        </section>
+
+        <audio controls style="display: block; margin: auto;">
+            <source src="assets/audio/kontraa-water-afro-pop-music-445661.mp3" type="audio/mp3">
+            <source src="assets/recursos_opcionales/the_mountain-jazz-cafe-496552.mp3" type="audio/mp3">
+            El navegador no soporta este audio
+        </audio>
+
+        <div class="comprar">
+            <h3>Desea comprar nuestros productos?</h3>
+            <button><a href="pedidos.html" target="_blank">Comprar</a></button>
+        </div>
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <h3>Contáctenos <i class="fa fa-envelope" aria-hidden="true"></i></h3>
+       <div class="contactenos">
+         <nav class="enlaces">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </nav>
+        <nav class="contacto">
+            <i class="fa fa-phone" aria-hidden="true"><p>7270-6979</p></i>
+            <i class="fa fa-location-arrow" aria-hidden="true"><p>Sarchí Norte</p></i>
+        </nav>
+       </div>
+        <p>&copy; Panadería Casera. Todos los derechos reservados</p><br><br><br>
+    </footer>
+</body>
+
+</html>
