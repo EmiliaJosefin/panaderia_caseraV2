@@ -90,16 +90,18 @@ blockquote {
     margin-top: 20px;
     text-align: center;
     color: black;
+    margin-bottom: 15px;
 }
 
-#nuestros-productos h1{
+#nuestros-productos h2{
     margin-top: 55px;
 }
-#nuestros-productos h1, dl, dt, dd{
+#nuestros-productos h2, dl, dt, dd{
     background-color: white;
     color: rgb(78, 50, 19);
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
 }
 .imagenes-polaroid{
     display: flex;
@@ -230,10 +232,45 @@ input:focus{
 }
 
 /* CSS de información */
+.table table{
+    overflow-x:auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    width: 75%;
+    margin-bottom: 15px;
+    box-shadow: -5px 5px 15px gray;
+    font-family: "Iosevka Charon", monospace, serif;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 5px;
+}
 .table h1{
     color:rgb(94, 61, 12);
+    margin-bottom: 25px;
+    border-bottom: 1px solid;
+    text-align: left;
 }
 
-th, td{
-    color: black;
+th, td, b{
+    color: rgb(104, 60, 11);
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(245, 240, 231);
+}
+tfoot{
+    text-align: center;
+}
+.precio{
+    vertical-align: bottom;
+    text-align: right;
+}
+th.titulo-tabla{
+    font-size: 1.5rem;
+    color: rgb(104, 60, 11);
+}
+thead{
+    background-color:  rgb(223, 186, 118);
 }
