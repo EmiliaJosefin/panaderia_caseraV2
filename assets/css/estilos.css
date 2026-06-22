@@ -1,0 +1,468 @@
+body {
+    font-family: "Iosevka Charon", monospace, serif;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(223, 186, 118);
+    color: rgb(53, 44, 33);
+    font-weight: bold
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icono-encabezado {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    animation-name: icono;
+    animation: icono 3s infinite;
+}
+
+@keyframes icono {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        left: 10px;
+        top: 0px;
+    }
+
+    75% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+h1 {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.imagen-main {
+    background-image: url("../imagenes/ingredientes.png");
+    background-size: cover;
+    filter: opacity(65%);
+    height: 600px;
+}
+
+.imagen-main h2 {
+    color: black;
+    text-align: center;
+    padding-top: 250px;
+    font-size: 2.5rem;
+}
+
+.imagen-main h3 {
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2.0rem;
+}
+
+#bienvenido h2 {
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+}
+
+#bienvenido p {
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+#bienvenido q,
+em,
+blockquote {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#nuestros-productos h2 {
+    margin-top: 55px;
+}
+
+#nuestros-productos h2,
+dl,
+dt,
+dd {
+    background-color: white;
+    color: rgb(78, 50, 19);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.imagenes-polaroid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.polaroid1 {
+    padding: 10px 10px 25px 10px;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(-5deg);
+    box-shadow: -1px -1px 15px rgb(133, 132, 132);
+    margin: 50px 15px 15px 0;
+}
+
+.polaroid2 {
+    padding: 10px 10px 25px 10px;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+    transform: rotate(5deg);
+    border-style: solid;
+    box-shadow: 1px 1px 15px rgb(133, 132, 132);
+    margin: 50px 0 15px 15px;
+}
+
+.polaroid1:hover,
+.polaroid2:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    clear: both;
+}
+
+.comprar {
+    background-image: url("../imagenes/cupcakes.jpg");
+    background-size: cover;
+    filter: opacity(65%);
+    height: 600px;
+    margin-top: 50px;
+}
+
+.comprar h3 {
+    color: black;
+    padding-top: 100px;
+    margin-left: 150px;
+    font-size: 1.5rem;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 150px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: black;
+    background-color: rgb(236, 205, 68);
+    border-color: rgb(236, 205, 68);
+}
+
+button:hover {
+    color: coral;
+    border-color: coral;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: rgb(139, 69, 19);
+    text-align: center;
+    padding: 15px;
+}
+
+.contactenos {
+    align-items: center;
+    margin-top: 15px;
+}
+
+.fa {
+    margin: 0 15px;
+}
+
+.fa:hover {
+    transform: translateY(-5px);
+}
+
+a .fa-brands:hover {
+    transform: translateY(-5px);
+}
+
+footer p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+/* CSS de mision vision  */
+.mision-vision p {
+    color: black;
+    margin: 15px;
+    padding: 25px;
+}
+
+/* Imagen de la página misión y visión */
+.imagen-mision {
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+picture{
+    height: 500px;
+    width: max-content;
+}
+figcaption{
+    color: black;
+    padding: 10px;
+}
+/* CSS de formulario de pedidos */
+.formulario {
+    width: auto;
+    color: black;
+}
+
+fieldset:hover {
+    box-shadow: 1px 2px 5px rgb(146, 145, 145);
+}
+
+fieldset {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+legend,
+label,
+datalist,
+option {
+    color: black;
+    margin-left: 10px;
+}
+
+/* Los campos del formulario se ajustan al ancho del contenedor */
+input,
+textarea,
+datalist {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    background-color: blanchedalmond;
+    color: black;
+    box-shadow: 1px 2px 5px rgb(207, 144, 61);
+    border-color: blanchedalmond;
+}
+
+.enviar {
+    margin: 15px;
+    color: rgb(53, 31, 5);
+    background-color: blanchedalmond;
+}
+
+.enviar:hover {
+    color: brown;
+}
+
+/* CSS de información */
+.table table {
+    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    width: 75%;
+    margin-bottom: 15px;
+    box-shadow: -5px 5px 15px gray;
+    font-family: "Iosevka Charon", monospace, serif;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.table h1 {
+    color: rgb(94, 61, 12);
+    margin-bottom: 25px;
+    border-bottom: 1px solid;
+    text-align: left;
+}
+
+th,
+td,
+b {
+    color: rgb(104, 60, 11);
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(245, 240, 231);
+}
+
+tfoot {
+    text-align: center;
+}
+
+.precio {
+    vertical-align: bottom;
+    text-align: right;
+}
+
+th.titulo-tabla {
+    font-size: 1.5rem;
+    color: rgb(104, 60, 11);
+}
+
+thead {
+    background-color: rgb(223, 186, 118);
+}
+
+
+/* MEDIA QUERY - Tablets (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+
+    /* Encabezado se centra y menú se forma en columna*/
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 15px 0 0 0;
+        text-align: center;
+    }
+
+    /* Banner principal y de compra los hago mas pequeños */
+    .imagen-main,
+    .comprar {
+        height: 400px;
+    }
+
+    .imagen-main h2 {
+        padding-top: 150px;
+        font-size: 2rem;
+    }
+
+    /* La tabla y el formulario se adaptan al ancho de pantalla */
+    .table table {
+        width: 95%;
+        height: auto;
+    }
+
+    fieldset {
+        width: 90%;
+    }
+}
+
+/* MEDIA QUERY - Móviles grandes y tablets pequeñas (hasta 768px) */
+@media screen and (max-width: 768px) {
+
+    /* El menú se acomoda en columna */
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Las imágenes polaroid se colocan una debajo de otra en forma de columna */
+    .imagenes-polaroid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Les quito la animación para que no se salgan ya que haciendo pruebas ellas se desbordaban */
+    .polaroid1,
+    .polaroid2 {
+        float: none;
+        margin: 25px auto;
+        transform: none;
+    }
+
+    /* El texto del botón de compra se centra */
+    .comprar h3,
+    button {
+        margin-left: 0;
+        text-align: center;
+        display: block;
+    }
+
+    button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* El textarea agarra el ancho del formulario y le quito la medida que yo le había puesto en un inicio */
+    textarea {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY - Móviles pequeños (hasta 480px) */
+@media screen and (max-width: 480px) {
+
+    /* Las imágenes ocupan casi todo el ancho del contenedor */
+    .polaroid1,
+    .polaroid2 {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    /* Se reduce la altura de la imágen de la página principal para que no se vea deforme */
+    .imagen-main,
+    .comprar {
+        height: 300px;
+    }
+
+    .imagen-main h2 {
+        padding-top: 100px;
+        font-size: 1.5rem;
+    }
+
+    .imagen-main h3 {
+        font-size: 1.2rem;
+    }
+
+    .icono-encabezado {
+        width: 100px;
+    }
+
+    /* La tabla puede desplazarse horizontalmente */
+    .table {
+        overflow-x: auto;
+    }
+
+    /* La imagen de misión/visión se reduce un poco más en móviles */
+    .imagen-mision {
+        height: 300px;
+    }
+}
